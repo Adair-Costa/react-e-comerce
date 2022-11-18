@@ -1,0 +1,75 @@
+.icon-coffee {
+    margin-bottom: 0.1rem !important;
+}
+
+.centered-navbar {
+    display: flex;
+    justify-content: end;
+}
+
+/* media query */
+@media(min-width: 768px) {
+    .constainer-fluid-2 {
+        position: relative;
+        right: 2rem;
+        font-size: 0.9rem !important;
+    }
+    .nav-link {
+        position: relative;
+    }
+    
+    .nav-link::after {
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    
+    .nav-link:hover::after {
+        content: "";
+        opacity: 1;
+        height: 2px;
+        width: 100%;
+        background-color: green;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+@media(max-width: 425px) {
+    .navbar-nav {
+        position: relative;
+        right: 5rem;
+        top: 1.5rem;
+    }
+}
+@media(max-width: 375px) {
+    .navbar-toggler {
+        position: relative;
+        bottom: 2.5rem;
+        left: 13rem;
+    }
+    .text-icon-coffee {
+        position: relative;
+        right: 1.2rem;
+    }
+    .navbar-nav {
+        position: relative;
+        right: 4rem;
+        top: 1.5rem;
+    }
+}
+@media(max-width: 320px) {
+    .navbar-toggler {
+        position: relative;
+        bottom: 2.5rem;
+        left: 10rem;
+    }
+    .text-icon-coffee {
+        position: relative;
+        right: 2.2rem;
+    }
+    .navbar-nav {
+        position: relative;
+        right: 2.8rem;
+        top: 1.5rem;
+    }
+}
